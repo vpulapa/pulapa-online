@@ -1,0 +1,51 @@
+{
+  "artifact": "pulapa_website_setup",
+  "date": "2026-07-21",
+  "domain": "pulapa.online",
+  "task_classification": "operator_display",
+  "allowed_state_progression_applicable": false,
+  "governance_status": "website_only_artifact",
+  "promotion_allowed": false,
+  "runtime_trading_impact": "none",
+  "ml_trade_creation": "none",
+  "blocked_or_quarantined_family_impact": "none",
+  "website_stack": {
+    "hosting_target": "GitHub Pages",
+    "dns_target": "Cloudflare",
+    "site_type": "static",
+    "publishing_source": "branch_root"
+  },
+  "publish_attempt": {
+    "attempted_on": "2026-07-21",
+    "local_git_initialized": true,
+    "github_cli_available": false,
+    "github_repository_found": false,
+    "github_repository_created": false,
+    "github_pages_enabled": false,
+    "cloudflare_dns_configured": false,
+    "blocked_by": "GitHub sign-in and missing repository creation capability in available connector"
+  },
+  "produced_files": [
+    "index.html",
+    "styles.css",
+    "script.js",
+    "404.html",
+    "CNAME",
+    ".nojekyll",
+    "robots.txt",
+    "sitemap.xml",
+    "README.md",
+    "DEPLOYMENT.md",
+    "tests/validate_site.py",
+    "reports/pulapa_website_setup_report.md"
+  ],
+  "focused_tests": [
+    {
+      "command": "python3 tests/validate_site.py",
+      "status": "passed",
+      "validated_on": "2026-07-21"
+    }
+  ],
+  "human_readable_report": "reports/pulapa_website_setup_report.md",
+  "machine_readable_artifact": "reports/pulapa_website_setup.json"
+}
