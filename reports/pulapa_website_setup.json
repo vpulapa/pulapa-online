@@ -26,7 +26,19 @@
     "github_pages_enabled": true,
     "github_pages_source": "main / (root)",
     "github_pages_workflow_status": "completed_successfully",
-    "github_reported_site_url": "http://pulapa.online/",
+    "github_reported_site_url": "https://pulapa.online/",
+    "github_pages_dns_check_status": "successful",
+    "github_pages_https_enforced": true,
+    "github_pages_https_certificate": {
+      "issuer": "Let's Encrypt",
+      "subject": "pulapa.online",
+      "subject_alt_names": [
+        "pulapa.online",
+        "www.pulapa.online"
+      ],
+      "not_before": "2026-07-21T12:46:57Z",
+      "not_after": "2026-10-19T12:46:56Z"
+    },
     "cloudflare_dns_configured": true,
     "cloudflare_zone_created": true,
     "cloudflare_plan": "free",
@@ -56,6 +68,22 @@
       "last_checked_on": "2026-07-21",
       "cloudflare_authoritative_records_verified": true,
       "dnssec_ds_record_present": false,
+      "public_nameservers": [
+        "joel.ns.cloudflare.com",
+        "virginia.ns.cloudflare.com"
+      ],
+      "public_apex_a_records": [
+        "185.199.108.153",
+        "185.199.109.153",
+        "185.199.110.153",
+        "185.199.111.153"
+      ],
+      "public_apex_aaaa_records": [
+        "2606:50c0:8000::153",
+        "2606:50c0:8001::153",
+        "2606:50c0:8002::153",
+        "2606:50c0:8003::153"
+      ],
       "public_apex_a_record_immediately_after_update": "192.64.119.241",
       "public_www_resolution_immediately_after_update": "namecheap_parking",
       "public_nameservers_immediately_after_update": [
@@ -67,11 +95,14 @@
         "virginia.ns.cloudflare.com"
       ],
       "github_default_url_redirects_to_custom_domain": true,
-      "custom_domain_currently_serves": "namecheap_parking",
-      "cloudflare_activation_status": "waiting_for_registrar_propagation",
-      "status": "nameserver_change_saved_but_public_dns_not_yet_propagated"
+      "custom_domain_currently_serves": "github_pages",
+      "cloudflare_activation_status": "active",
+      "http_apex_redirects_to_https": true,
+      "https_apex_status": 200,
+      "http_www_redirects_to_https_apex": true,
+      "status": "https_enabled_and_verified"
     },
-    "blocked_by": "registrar_nameserver_propagation_and_github_https_verification"
+    "blocked_by": null
   },
   "produced_files": [
     "index.html",
@@ -92,6 +123,24 @@
       "command": "python3 tests/validate_site.py",
       "status": "passed",
       "validated_on": "2026-07-21"
+    },
+    {
+      "command": "curl -I -L --max-time 20 http://pulapa.online/",
+      "status": "passed",
+      "validated_on": "2026-07-21",
+      "result": "redirects_to_https_apex"
+    },
+    {
+      "command": "curl -I --max-time 20 https://pulapa.online/",
+      "status": "passed",
+      "validated_on": "2026-07-21",
+      "result": "200_ok"
+    },
+    {
+      "command": "curl -I -L --max-time 20 http://www.pulapa.online/",
+      "status": "passed",
+      "validated_on": "2026-07-21",
+      "result": "redirects_to_https_apex"
     }
   ],
   "human_readable_report": "reports/pulapa_website_setup_report.md",

@@ -77,13 +77,16 @@ Cloudflare and registrar update on 2026-07-21:
 - Direct DNS queries to Cloudflare's assigned nameservers confirmed the GitHub Pages A, AAAA, and `www` CNAME records.
 - DNSSEC check returned no DS record, so DNSSEC is not expected to block activation.
 
-Current DNS check after registrar save:
+HTTPS enablement on 2026-07-21:
 
-- Public DNS still shows Namecheap delegation and Namecheap parking immediately after the change.
-- This is expected during propagation. Cloudflare states nameserver verification typically takes 1-2 hours and may take up to 24 hours depending on the registrar.
+- Public DNS now delegates to `joel.ns.cloudflare.com` and `virginia.ns.cloudflare.com`.
+- GitHub Pages DNS check is successful.
+- GitHub issued a Let's Encrypt certificate for `pulapa.online` and `www.pulapa.online`.
+- GitHub Pages Enforce HTTPS is enabled.
+- `http://pulapa.online/` redirects to `https://pulapa.online/`.
+- `https://pulapa.online/` returns `200 OK`.
+- `http://www.pulapa.online/` redirects through the apex and resolves to `https://pulapa.online/`.
 
 Remaining account-specific setup:
 
-- Wait for nameserver propagation to reach Cloudflare.
-- Re-check Cloudflare activation.
-- Return to GitHub Pages settings and enable HTTPS after DNS verification passes.
+- None for HTTPS. Cloudflare proxy remains DNS-only while GitHub Pages owns certificate enforcement.
