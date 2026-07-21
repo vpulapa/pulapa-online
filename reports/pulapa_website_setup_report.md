@@ -60,6 +60,8 @@ Current DNS check:
 - `pulapa.online` currently resolves to `192.64.119.241`, which is Namecheap parking.
 - `www.pulapa.online` currently points to `parkingpage.namecheap.com`.
 - Nameservers are `dns1.registrar-servers.com` and `dns2.registrar-servers.com`.
+- `https://vpulapa.github.io/pulapa-online/` redirects to `http://pulapa.online/` because the GitHub Pages custom domain is set.
+- `http://pulapa.online/` currently redirects through Namecheap parking, so the Pulapa site will not be visible at the custom domain until DNS changes propagate.
 - Cloudflare dashboard required sign-in and could not be configured from this session.
 
 Remaining account-specific setup:

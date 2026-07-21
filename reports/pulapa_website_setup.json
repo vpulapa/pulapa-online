@@ -35,6 +35,8 @@
         "dns1.registrar-servers.com",
         "dns2.registrar-servers.com"
       ],
+      "github_default_url_redirects_to_custom_domain": true,
+      "custom_domain_currently_serves": "namecheap_parking",
       "status": "namecheap_parking_not_yet_pointed_to_github_pages"
     },
     "blocked_by": "Cloudflare dashboard sign-in and registrar nameserver update"
