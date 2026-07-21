@@ -48,14 +48,23 @@ Local files are ready for GitHub Pages.
 Publish attempt on 2026-07-21:
 
 - GitHub CLI was not installed in this environment.
-- The connected GitHub app can write files to an existing repository, but does not expose repository creation or GitHub Pages settings.
-- The in-app browser and Chrome both reached GitHub sign-in, so repository creation could not be completed without the owner signing in.
+- Chrome was later signed in to GitHub by the owner.
+- Repository created: `https://github.com/vpulapa/pulapa-online`
+- Initial commit pushed: `54a31031e57d8f576270060a67cd89980fac7c3c`
+- GitHub Pages enabled from `main` / `/(root)`.
+- GitHub Pages workflow completed successfully.
+- GitHub reports the site live at `http://pulapa.online/`.
 
-Cloudflare and GitHub dashboard steps still require the domain owner to complete account-specific setup:
+Current DNS check:
 
-- Create/push the GitHub repository.
-- Enable GitHub Pages from the branch root.
-- Set `pulapa.online` as the custom domain.
+- `pulapa.online` currently resolves to `192.64.119.241`, which is Namecheap parking.
+- `www.pulapa.online` currently points to `parkingpage.namecheap.com`.
+- Nameservers are `dns1.registrar-servers.com` and `dns2.registrar-servers.com`.
+- Cloudflare dashboard required sign-in and could not be configured from this session.
+
+Remaining account-specific setup:
+
+- Sign in to Cloudflare and add `pulapa.online`.
 - Add the GitHub Pages A/AAAA records and `www` CNAME in Cloudflare.
-- Change registrar nameservers to Cloudflare nameservers.
-- Enable HTTPS after GitHub verification passes.
+- Change Namecheap nameservers to the two Cloudflare nameservers.
+- Return to GitHub Pages settings and enable HTTPS after DNS verification passes.

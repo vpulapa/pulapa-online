@@ -19,11 +19,25 @@
     "attempted_on": "2026-07-21",
     "local_git_initialized": true,
     "github_cli_available": false,
-    "github_repository_found": false,
-    "github_repository_created": false,
-    "github_pages_enabled": false,
+    "github_repository_found": true,
+    "github_repository_created": true,
+    "github_repository_url": "https://github.com/vpulapa/pulapa-online",
+    "initial_commit_sha": "54a31031e57d8f576270060a67cd89980fac7c3c",
+    "github_pages_enabled": true,
+    "github_pages_source": "main / (root)",
+    "github_pages_workflow_status": "completed_successfully",
+    "github_reported_site_url": "http://pulapa.online/",
     "cloudflare_dns_configured": false,
-    "blocked_by": "GitHub sign-in and missing repository creation capability in available connector"
+    "dns_status": {
+      "apex_a_record": "192.64.119.241",
+      "www_cname": "parkingpage.namecheap.com",
+      "nameservers": [
+        "dns1.registrar-servers.com",
+        "dns2.registrar-servers.com"
+      ],
+      "status": "namecheap_parking_not_yet_pointed_to_github_pages"
+    },
+    "blocked_by": "Cloudflare dashboard sign-in and registrar nameserver update"
   },
   "produced_files": [
     "index.html",
