@@ -27,19 +27,49 @@
     "github_pages_source": "main / (root)",
     "github_pages_workflow_status": "completed_successfully",
     "github_reported_site_url": "http://pulapa.online/",
-    "cloudflare_dns_configured": false,
+    "cloudflare_dns_configured": true,
+    "cloudflare_zone_created": true,
+    "cloudflare_plan": "free",
+    "cloudflare_assigned_nameservers": [
+      "joel.ns.cloudflare.com",
+      "virginia.ns.cloudflare.com"
+    ],
+    "cloudflare_records_configured": {
+      "apex_a": [
+        "185.199.108.153",
+        "185.199.109.153",
+        "185.199.110.153",
+        "185.199.111.153"
+      ],
+      "apex_aaaa": [
+        "2606:50c0:8000::153",
+        "2606:50c0:8001::153",
+        "2606:50c0:8002::153",
+        "2606:50c0:8003::153"
+      ],
+      "www_cname": "vpulapa.github.io",
+      "web_record_proxy_status": "dns_only",
+      "preserved_email_forwarding_records": true
+    },
+    "namecheap_nameservers_updated": true,
     "dns_status": {
-      "apex_a_record": "192.64.119.241",
-      "www_cname": "parkingpage.namecheap.com",
-      "nameservers": [
+      "last_checked_on": "2026-07-21",
+      "public_apex_a_record_immediately_after_update": "192.64.119.241",
+      "public_www_resolution_immediately_after_update": "namecheap_parking",
+      "public_nameservers_immediately_after_update": [
         "dns1.registrar-servers.com",
         "dns2.registrar-servers.com"
       ],
+      "registrar_nameservers_saved_as": [
+        "joel.ns.cloudflare.com",
+        "virginia.ns.cloudflare.com"
+      ],
       "github_default_url_redirects_to_custom_domain": true,
       "custom_domain_currently_serves": "namecheap_parking",
-      "status": "namecheap_parking_not_yet_pointed_to_github_pages"
+      "cloudflare_activation_status": "waiting_for_registrar_propagation",
+      "status": "nameserver_change_saved_but_public_dns_not_yet_propagated"
     },
-    "blocked_by": "Cloudflare dashboard sign-in and registrar nameserver update"
+    "blocked_by": "registrar_nameserver_propagation_and_github_https_verification"
   },
   "produced_files": [
     "index.html",

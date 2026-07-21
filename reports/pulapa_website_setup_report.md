@@ -55,18 +55,33 @@ Publish attempt on 2026-07-21:
 - GitHub Pages workflow completed successfully.
 - GitHub reports the site live at `http://pulapa.online/`.
 
-Current DNS check:
+Cloudflare and registrar update on 2026-07-21:
 
-- `pulapa.online` currently resolves to `192.64.119.241`, which is Namecheap parking.
-- `www.pulapa.online` currently points to `parkingpage.namecheap.com`.
-- Nameservers are `dns1.registrar-servers.com` and `dns2.registrar-servers.com`.
-- `https://vpulapa.github.io/pulapa-online/` redirects to `http://pulapa.online/` because the GitHub Pages custom domain is set.
-- `http://pulapa.online/` currently redirects through Namecheap parking, so the Pulapa site will not be visible at the custom domain until DNS changes propagate.
-- Cloudflare dashboard required sign-in and could not be configured from this session.
+- Cloudflare zone created for `pulapa.online` on the Free plan.
+- Cloudflare DNS records configured for GitHub Pages:
+  - `A pulapa.online -> 185.199.108.153`
+  - `A pulapa.online -> 185.199.109.153`
+  - `A pulapa.online -> 185.199.110.153`
+  - `A pulapa.online -> 185.199.111.153`
+  - `AAAA pulapa.online -> 2606:50c0:8000::153`
+  - `AAAA pulapa.online -> 2606:50c0:8001::153`
+  - `AAAA pulapa.online -> 2606:50c0:8002::153`
+  - `AAAA pulapa.online -> 2606:50c0:8003::153`
+  - `CNAME www -> vpulapa.github.io`
+- Web records were left as DNS only during GitHub Pages verification.
+- Existing Namecheap email-forwarding MX records and SPF TXT record were preserved in Cloudflare.
+- Namecheap nameservers were changed from `dns1.registrar-servers.com` and `dns2.registrar-servers.com` to:
+  - `joel.ns.cloudflare.com`
+  - `virginia.ns.cloudflare.com`
+- Cloudflare activation status: waiting for registrar propagation.
+
+Current DNS check after registrar save:
+
+- Public DNS still shows Namecheap delegation and Namecheap parking immediately after the change.
+- This is expected during propagation. Cloudflare states nameserver verification typically takes 1-2 hours and may take up to 24 hours depending on the registrar.
 
 Remaining account-specific setup:
 
-- Sign in to Cloudflare and add `pulapa.online`.
-- Add the GitHub Pages A/AAAA records and `www` CNAME in Cloudflare.
-- Change Namecheap nameservers to the two Cloudflare nameservers.
+- Wait for nameserver propagation to reach Cloudflare.
+- Re-check Cloudflare activation.
 - Return to GitHub Pages settings and enable HTTPS after DNS verification passes.
