@@ -74,6 +74,8 @@ Cloudflare and registrar update on 2026-07-21:
   - `joel.ns.cloudflare.com`
   - `virginia.ns.cloudflare.com`
 - Cloudflare activation status: waiting for registrar propagation.
+- Direct DNS queries to Cloudflare's assigned nameservers confirmed the GitHub Pages A, AAAA, and `www` CNAME records.
+- DNSSEC check returned no DS record, so DNSSEC is not expected to block activation.
 
 Current DNS check after registrar save:
 

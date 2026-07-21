@@ -54,6 +54,8 @@
     "namecheap_nameservers_updated": true,
     "dns_status": {
       "last_checked_on": "2026-07-21",
+      "cloudflare_authoritative_records_verified": true,
+      "dnssec_ds_record_present": false,
       "public_apex_a_record_immediately_after_update": "192.64.119.241",
       "public_www_resolution_immediately_after_update": "namecheap_parking",
       "public_nameservers_immediately_after_update": [
