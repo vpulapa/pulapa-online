@@ -558,3 +558,5 @@ h3 {
     transition-duration: 0.01ms !important;
   }
 }
+
+.playbook-feature{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;margin:30px 0;background:#e8eddf;border:1px solid #d9e0cd;border-radius:20px}.playbook-feature h2{font:normal 36px/1.2 Georgia,serif;margin:12px 0}.playbook-feature p{color:#526749}.playbook-feature img{width:100%;height:auto;border-radius:12px}@media(max-width:800px){.playbook-feature{grid-template-columns:1fr;padding:25px}.playbook-feature h2{font-size:30px}}

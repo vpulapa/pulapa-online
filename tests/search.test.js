@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict');
+const {matchesThesis}=require('../playbook/assets/playbook.js');
+const data=require('../playbook/assets/theses.json');
+const find=(q='',f='',d='')=>data.filter(t=>matchesThesis(t,q,f,d));
+assert.equal(find().length,60);
+assert.equal(find('','trend').length,15);
+assert.equal(find('','range','Wait').length,2);
+assert.equal(find('H2')[0].id,3);
+assert.equal(find(' UNCONFIRMED IMPOSSIBLE TERM ').length,0);
+assert.equal(find('','probes').length,3);
+assert(find('unaffordable').some(t=>t.id===11));
+assert.equal(find('','', 'Short').every(t=>t.direction==='Short'),true);
+assert(find('pullback bull','trend','Long').length>0);
+console.log('PASS: search covers full notes, token matching, family, direction, empty results, and 60 records.');

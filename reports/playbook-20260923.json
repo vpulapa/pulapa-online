@@ -1,0 +1,15 @@
+{
+  "classification": "operator_display",
+  "secondary_classification": "knowledge_graph",
+  "state": "interpreted_doctrine",
+  "governance_status": "educational_review_only",
+  "promotion_allowed": false,
+  "runtime_changes": false,
+  "personal_trading_data_published": false,
+  "theses": 60,
+  "synthetic_diagrams": 60,
+  "entry_url": "https://pulapa.online/playbook/",
+  "source": "User-supplied Brooks-style thesis library",
+  "terminology_reference": "https://www.brookstradingcourse.com/price-action-trading-terms-glossary/",
+  "validation": {"content_and_links": "passed", "svg_xml": "passed", "search_logic": "passed", "local_http": "passed", "browser_visual_qa": "not_performed_skill_constraint"}
+}
