@@ -1,236 +1,28 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pulapa | AI Systems, Trading Research, Software Engineering</title>
-    <meta
-      name="description"
-      content="Pulapa is the public home for AI systems, trading research, software engineering projects, and long-form technical notes."
-    >
-    <meta name="theme-color" content="#173b2f">
-    <meta property="og:title" content="Pulapa">
-    <meta
-      property="og:description"
-      content="AI systems, trading research, software engineering projects, and rigorous technical notes."
-    >
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pulapa.online/">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="canonical" href="https://pulapa.online/">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Pulapa home">
-        <span class="brand-mark" aria-hidden="true">P</span>
-        <span>Pulapa</span>
-      </a>
-      <nav class="primary-nav" aria-label="Primary navigation">
-        <a href="/playbook/">Trading Playbook</a>
-        <a href="#about">About</a>
-        <a href="#ai">AI</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main id="main">
-      <section class="hero" id="home">
-        <div class="hero-copy">
-          <p class="eyebrow">Software engineering / AI systems / market research</p>
-          <h1>A public lab for careful systems, useful AI, and disciplined trading research.</h1>
-          <p class="hero-lede">
-            Pulapa collects the work: practical tools, research notes, operator dashboards, and experiments that turn messy
-            ideas into systems with evidence.
-          </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="/playbook/">Explore the Trading Playbook</a>
-            <a class="button button-secondary" href="#contact">Start a Conversation</a>
-          </div>
-        </div>
-
-        <div class="hero-visual" aria-label="Animated signal map">
-          <canvas id="signal-canvas" width="760" height="560"></canvas>
-          <div class="signal-panel">
-            <div class="panel-row">
-              <span>Context</span>
-              <strong>Mapped</strong>
-            </div>
-            <div class="panel-row">
-              <span>Thesis</span>
-              <strong>Evidence-first</strong>
-            </div>
-            <div class="panel-row">
-              <span>Invalidation</span>
-              <strong>Explicit</strong>
-            </div>
-            <div class="panel-row">
-              <span>Runtime</span>
-              <strong>Human-governed</strong>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="playbook-feature" aria-labelledby="playbook-heading">
-        <div><p class="eyebrow">NEW / THE PRICE ACTION FIELD GUIDE</p>
-        <h2 id="playbook-heading">60 theses. One disciplined way to read the market.</h2>
-        <p>Explore a visual Brooks-style playbook: context, participant logic, confirmation, invalidation, and management for every setup.</p>
-        <a class="button button-primary" href="/playbook/">Open the thesis library ↗</a></div>
-        <a href="/playbook/03-h2-pullback-in-a-bull-trend.html" aria-label="Study the H2 pullback thesis"><img src="/playbook/assets/03-h2-pullback-in-a-bull-trend.svg" alt="Illustrative bull-trend second-entry pullback" width="900" height="420" loading="lazy"></a>
-      </section>
-
-      <section class="focus-strip" aria-label="Focus areas">
-        <span>AI agents</span>
-        <span>Trading research</span>
-        <span>Data pipelines</span>
-        <span>Operator tools</span>
-        <span>Technical writing</span>
-      </section>
-
-      <section class="section two-column" id="about">
-        <div>
-          <p class="section-kicker">About</p>
-          <h2>Engineering taste with a researcher's patience.</h2>
-        </div>
-        <div class="section-copy">
-          <p>
-            Pulapa is where software engineering, AI, and market-structure research meet. The goal is not to make flashy
-            demos. It is to build tools that explain their assumptions, preserve evidence, and make better decisions easier
-            for humans.
-          </p>
-          <p>
-            The work here is especially interested in AI-assisted workflows, trading research infrastructure, knowledge
-            systems, and the craft of turning complex domains into usable interfaces.
-          </p>
-        </div>
-      </section>
-
-      <section class="section band" id="ai">
-        <div class="section-heading">
-          <p class="section-kicker">AI</p>
-          <h2>Tools that make reasoning visible.</h2>
-          <p>
-            Practical AI work belongs close to the evidence. Pulapa focuses on systems that can retrieve context, expose
-            uncertainty, and keep a human in the loop.
-          </p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <h3>Agentic workflows</h3>
-            <p>Task systems that gather context, produce artifacts, and leave an auditable trail.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Knowledge memory</h3>
-            <p>Research notes, decisions, and source evidence shaped into reusable working memory.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Operator interfaces</h3>
-            <p>Dashboards that make status, confidence, and constraints clear at a glance.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section two-column" id="research">
-        <div>
-          <p class="section-kicker">Trading Research</p>
-          <h2>Research before rules. Evidence before confidence.</h2>
-        </div>
-        <div class="research-list">
-          <article>
-            <span class="tag">Doctrine</span>
-            <h3>Context recognition</h3>
-            <p>Mapping trend, range, pullback, breakout, and failed-breakout situations into reviewable events.</p>
-          </article>
-          <article>
-            <span class="tag">Governance</span>
-            <h3>Human-led decisions</h3>
-            <p>AI and ML are treated as caution, confidence, and review overlays, not automatic trade authority.</p>
-          </article>
-          <article>
-            <span class="tag">Evidence</span>
-            <h3>Experiment memory</h3>
-            <p>Reports and artifacts keep conclusions tied to data, assumptions, and repeatable checks.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section band" id="projects">
-        <div class="section-heading">
-          <p class="section-kicker">Projects</p>
-          <h2>Current workbench.</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Private research OS</span>
-              <span>Genesis</span>
-            </div>
-            <h3>Genesis</h3>
-            <p>
-              A governed trading research system for context, thesis, invalidation, evidence, and operator review.
-            </p>
-          </article>
-          <article class="project-card">
-            <div class="project-meta">
-              <span>AI systems</span>
-              <span>Agents</span>
-            </div>
-            <h3>AI Tooling</h3>
-            <p>
-              Small, practical tools for retrieval, summarization, research synthesis, and workflow automation.
-            </p>
-          </article>
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Writing</span>
-              <span>Notes</span>
-            </div>
-            <h3>Technical Notes</h3>
-            <p>
-              Essays and field notes on software architecture, data quality, AI collaboration, and decision systems.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section resume-section" id="resume">
-        <div>
-          <p class="section-kicker">Resume</p>
-          <h2>Software engineer focused on AI-ready systems.</h2>
-          <p>
-            Add your resume PDF or link here when ready. This first version is structured so the site can grow into a
-            portfolio, project archive, and writing hub without changing platforms.
-          </p>
-        </div>
-        <a class="button button-secondary" href="#contact">Request Resume</a>
-      </section>
-
-      <section class="section contact-section" id="contact">
-        <div>
-          <p class="section-kicker">Contact</p>
-          <h2>Build, research, or compare notes.</h2>
-          <p>
-            For now, use this as the public contact point for the site. You can connect email routing for
-            <strong>hello@pulapa.online</strong> in Cloudflare later.
-          </p>
-        </div>
-        <div class="contact-actions">
-          <a class="button button-primary" href="mailto:hello@pulapa.online">Email Pulapa</a>
-          <a class="button button-secondary" href="https://github.com/" rel="noreferrer">GitHub</a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <span>&copy; <span id="year">2026</span> Pulapa</span>
-      <span>Built for GitHub Pages and Cloudflare DNS.</span>
-    </footer>
-
-    <script src="script.js" defer></script>
-  </body>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Alethia | ES Price Action Field Guide</title>
+  <meta name="description" content="An evidence-first quick-reference guide to the Alethia ES price-action framework.">
+  <meta name="theme-color" content="#0b1614"><link rel="canonical" href="https://pulapa.online/">
+  <link rel="stylesheet" href="assets/site.css"><script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to guide</a>
+  <header class="topbar"><a class="wordmark" href="#top"><span class="mark">A</span><span>ALETHIA<small>ES PRICE ACTION FIELD GUIDE</small></span></a><nav aria-label="Primary"><a href="#daily">15-min review</a><a href="#theses">Six theses</a><a href="#framework">Framework</a><a href="#regimes">Regimes</a><a href="#library">Library</a></nav><button class="theme-toggle" type="button" aria-label="Toggle color theme">◐</button></header>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy"><p class="eyebrow">CONTEXT → CONTROL → LOCATION → ATTEMPT → RESPONSE</p><h1>Read the market’s <em>behavioral story</em> before its pattern name.</h1><p class="lede">A fast, layered reference for 5-minute ES trading. Start with state, identify who has earned control, define what must happen next, and act only when the equation is clear.</p><div class="hero-actions"><a class="button primary" href="#daily">Begin today’s review</a><a class="button secondary" href="daily-playbook.html">Open the full six-thesis playbook</a></div><div class="principles"><span>Regime sets the default</span><span>Damage is not flip</span><span>Structure sets the stop</span></div></div>
+      <div class="hero-visual" aria-label="Behavioral price-action sequence illustration"><svg viewBox="0 0 720 510" role="img" aria-labelledby="hero-chart-title"><title id="hero-chart-title">Market moving from balance through breakout, test, and continuation</title><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#59d6b4"/><stop offset="1" stop-color="#e8b867"/></linearGradient></defs><g class="grid"><path d="M30 80H690M30 160H690M30 240H690M30 320H690M30 400H690M110 30V470M220 30V470M330 30V470M440 30V470M550 30V470M660 30V470"/></g><rect class="range-zone" x="54" y="255" width="250" height="120" rx="18"/><path class="price-path" d="M60 320 C90 275 120 360 150 310 S210 260 245 330 S285 360 310 288 C340 196 370 174 405 135 C440 104 470 118 505 155 C535 185 557 196 590 164 C620 134 650 106 684 70"/><path class="test-path" d="M405 135 C430 178 460 215 500 235 C530 252 555 220 590 164"/><g class="chart-labels"><text x="73" y="403">BALANCE</text><text x="318" y="254">CLAIM</text><text x="475" y="282">TEST</text><text x="593" y="142">ACCEPTANCE</text></g><g class="nodes"><circle cx="310" cy="288" r="7"/><circle cx="500" cy="235" r="7"/><circle cx="590" cy="164" r="7"/></g></svg><div class="visual-note"><span>Current question</span><strong>Did the breakout survive opposition?</strong><small>If yes: continuation thesis. If no: failure thesis.</small></div></div>
+    </section>
+    <section class="daily section" id="daily"><div class="section-heading"><div><p class="eyebrow">DAILY OPERATING RHYTHM</p><h2>Fifteen minutes. Six stories. One decision process.</h2></div><span class="time-badge">15:00</span></div><div class="timeline"><article><b>01</b><span>1 min</span><h3>Master flow</h3><p>Context → Control → Location → Attempt → Response → Destination → Equation → Act.</p></article><article><b>02</b><span>8 min</span><h3>Four A-tier theses</h3><p>Strong trend, channel pullback, accepted breakout/BOPB, range-edge failed breakout.</p></article><article><b>03</b><span>2 min</span><h3>B-tier</h3><p>Failed reversal / failure-of-failure resumption.</p></article><article><b>04</b><span>2 min</span><h3>Observe-only</h3><p>Mature-trend transition / MTR. Classify; do not need to execute.</p></article><article><b>05</b><span>2 min</span><h3>Final recall</h3><p>Name all six theses and one disqualifier for each without looking.</p></article></div><div class="rule-strip"><strong>If the thesis or equation is unclear:</strong><span>WAIT / DO NOTHING</span></div></section>
+    <section class="section" id="theses"><div class="section-heading"><div><p class="eyebrow">PERSONAL ES PLAYBOOK</p><h2>The six behavioral stories</h2><p>Patterns are evidence inside a story. They are not independent reasons to trade.</p></div><div class="legend"><span class="tier a">A</span> active <span class="tier b">B</span> selective <span class="tier o">O</span> observe</div></div><div class="thesis-grid" id="thesis-grid"></div><p class="source-note">A-tier means actively search and drill—not automatic entry. Every trade still needs context, qualification, structural invalidation, destination, and a positive trader’s equation.</p></section>
+    <section class="engine section" id="framework"><div class="section-heading"><div><p class="eyebrow">THE FROZEN DECISION ARCHITECTURE</p><h2>Eleven layers, scanned in order</h2><p>Use the full sequence while learning; compress it as recognition improves.</p></div><a class="text-link" href="framework.html">Read all framework cards →</a></div><div class="flow" aria-label="Eleven layer framework"><span>State</span><i>→</i><span>Control</span><i>→</i><span>Strength</span><i>→</i><span>Phase</span><i>→</i><span>Location</span><i>→</i><span>Attempt</span><i>→</i><span>FT</span><i>→</i><span>Failure</span><i>→</i><span>Destination</span><i>→</i><span>Equation</span><i>→</i><span>Act</span></div><div class="layer-grid" id="layer-grid"></div></section>
+    <section class="regimes section" id="regimes"><div class="section-heading"><div><p class="eyebrow">REGIME MAP</p><h2>Default expectation before exception</h2><p>The environment defines what evidence deserves the most weight.</p></div></div><div class="regime-board"><article class="regime strong"><div class="mini-chart"><i></i><i></i><i></i><i></i><i></i></div><h3>Strong trend</h3><strong>Default: continuation</strong><p>One side repeatedly accomplishes. Countertrend bars are weak or quickly rejected. Seek participation, not a top or bottom.</p></article><article class="regime channel"><div class="mini-chart"><i></i><i></i><i></i><i></i><i></i></div><h3>Healthy / maturing channel</h3><strong>Default: continuation, selective</strong><p>Directional advantage persists, but two-sidedness grows. Demand favorable structure and a credible resumption.</p></article><article class="regime range"><div class="mini-chart"><i></i><i></i><i></i><i></i><i></i></div><h3>Broad trading range</h3><strong>Default: failed BO / oscillation</strong><p>Both sides undo one another. Trade only meaningful edges and tested failures; avoid the middle.</p></article><article class="regime tight"><div class="mini-chart"><i></i><i></i><i></i><i></i><i></i></div><h3>Tight range / BO mode</h3><strong>Default: wait</strong><p>Direction is unresolved. Require displacement, follow-through, and the ability to hold outside.</p></article><article class="regime transition"><div class="mini-chart"><i></i><i></i><i></i><i></i><i></i></div><h3>Transition / reversal environment</h3><strong>Default: old control damaged</strong><p>New control has not yet been earned. The outcome may be resumption, range, or genuine reversal.</p></article></div></section>
+    <section class="section behavior"><div class="section-heading"><div><p class="eyebrow">BEHAVIORAL ENGINES</p><h2>Four sequences underneath the labels</h2></div></div><div class="engine-grid"><article><span>01 / ACCEPTANCE</span><h3>Claim → follow-through → acceptance or rejection</h3><p>A breakout makes a claim. What follows determines whether the market believes it.</p></article><article><span>02 / CONTROL</span><h3>Attempt → response → accomplishment</h3><p>Effort matters through what it changes: structure, value, control, or trapped participation.</p></article><article><span>03 / FAILURE</span><h3>Expectation → failure → trap → forced exit → fuel</h3><p>A useful failure requires a clear expectation and participants who must respond.</p></article><article><span>04 / REVERSAL</span><h3>Damage → test → failure → flip</h3><p>Exit threshold is lower than reversal threshold. Opposite control must be earned.</p></article></div></section>
+    <section class="checklist section" id="execution"><div class="section-heading"><div><p class="eyebrow">LIVE COMPRESSION</p><h2>The pre-entry decision card</h2></div><a class="text-link" href="execution.html">Open execution guide →</a></div><div class="checklist-layout"><ol><li><strong>State</strong><span>Trend, range, breakout mode, or transition?</span></li><li><strong>Control</strong><span>AIL, AIS, or genuinely uncertain?</span></li><li><strong>Location</strong><span>Where relative to structure, extremes, magnets, EMA, BO point?</span></li><li><strong>Thesis</strong><span>What should happen next—and why?</span></li><li><strong>Proof</strong><span>What attempt occurred? Was there follow-through, failure, or acceptance?</span></li><li><strong>Invalidation</strong><span>What market evidence kills the premise?</span></li><li><strong>Destination</strong><span>What is the nearest reasonable target?</span></li><li><strong>Equation</strong><span>Does probability × reward justify failure × risk?</span></li><li><strong>Act</strong><span>Long, short, or wait. Size from risk budget; stop from structure.</span></li></ol><aside><p>THE QUESTION BEFORE EVERY ENTRY</p><blockquote>Is this an approved thesis, in the correct regime, at a qualified location, with sufficient evidence, clear invalidation, a realistic destination, and a positive equation?</blockquote><div><span>If no</span><strong>PASS</strong></div></aside></div></section>
+    <section class="library section" id="library"><div class="section-heading"><div><p class="eyebrow">COMPLETE SOURCE LIBRARY</p><h2>Quick reference first. Full depth when needed.</h2><p>Every source is available as readable web sections and as the original printer-friendly PDF.</p></div></div><div class="library-grid"><article><span>98 pages</span><h3>Price Action Trilogy Handbook</h3><p>Core grammar, trend/range modules, reversal chapters, ES architecture, setups, time-of-day, risk, recall, and glossary.</p><div><a href="handbook.html">Read on web</a><a href="downloads/Alethia_Al_Brooks_Price_Action_Trilogy_Handbook_Version_1.pdf">PDF ↓</a></div></article><article><span>15 pages</span><h3>Brooks Master Framework Cards</h3><p>The frozen 11-layer decision architecture, behavioral engines, live scans, action rules, examples, and 15-phase learning plan.</p><div><a href="framework.html">Read on web</a><a href="downloads/Alethia_Brooks_Master_Framework_Cards_v1.pdf">PDF ↓</a></div></article><article><span>7 pages</span><h3>Daily 15-Minute Thesis Playbook</h3><p>The daily routine and one complete reference card for each of the six approved thesis families.</p><div><a href="daily-playbook.html">Read on web</a><a href="downloads/Alethia_ES_Thesis_Playbook_Daily_15_Min_Refresh_v1.pdf">PDF ↓</a></div></article></div><div class="gap-note"><strong>Known source gap:</strong> Reversals Chapter 23 was not separately supplied or studied. It remains unfilled rather than reconstructed from general knowledge.</div></section>
+  </main>
+  <footer><div><span class="mark">A</span><p><strong>ALETHIA</strong><br>Evidence before conviction.</p></div><p>Personal educational reference. Not financial advice. Concepts are compressed from the supplied Alethia discussion and documents; no claim of endorsement by Al Brooks.</p><a href="#top">Back to top ↑</a></footer>
+</body>
 </html>
