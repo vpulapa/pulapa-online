@@ -36,5 +36,10 @@ js=(ROOT/'assets/site.js').read_text(encoding='utf-8')
 if js.count("tier:'")!=6:errors.append('site.js: expected six theses')
 for filename in ['Alethia_Al_Brooks_Price_Action_Trilogy_Handbook_Version_1.pdf','Alethia_Brooks_Master_Framework_Cards_v1.pdf','Alethia_ES_Thesis_Playbook_Daily_15_Min_Refresh_v1.pdf']:
     if not (ROOT/'downloads'/filename).exists():errors.append(f'missing download {filename}')
+if not (ROOT/'assets'/'favicon.svg').exists():errors.append('missing favicon.svg')
+for page in ROOT.rglob('*.html'):
+    text=page.read_text(encoding='utf-8')
+    if 'rel="icon"' not in text:errors.append(f'{page.relative_to(ROOT)}: missing favicon')
+    if 'chapter 23' in text.lower():errors.append(f'{page.relative_to(ROOT)}: Chapter 23 disclaimer remains')
 if errors:raise SystemExit('Alethia validation failed:\n- '+'\n- '.join(errors))
-print('Alethia validation passed: core pages, links, five regimes, six theses, and three PDF downloads verified.')
+print('Alethia validation passed: core pages, links, five regimes, six theses, three PDF downloads, shared favicon, and Chapter 23 removal verified.')
